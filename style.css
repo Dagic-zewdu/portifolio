@@ -159,7 +159,7 @@ header {
   padding: 8px;
 }
 
-.see-project {
+.btn-enabled {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -172,6 +172,42 @@ header {
   margin-top: 20px;
   padding: 12px;
   border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.btn-disabled {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-top: 20px;
+  padding: 12px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #396df2;
+}
+
+.btn-pressed {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #7a869a;
+  margin-top: 20px;
+  padding: 12px;
+  border: 1px solid #7a869a;
   box-sizing: border-box;
   border-radius: 8px;
   background-color: #fff;
@@ -249,4 +285,9 @@ hr {
   margin-right: 46px;
   background: #dfe1e6;
   width: auto;
+}
+
+button:hover {
+  background-color: #396df2;
+  color: white;
 }
