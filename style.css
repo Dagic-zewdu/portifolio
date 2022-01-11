@@ -215,11 +215,10 @@ header {
 
 #about {
   width: 375px;
-  height: 1263px;
   background: #fff;
   border-radius: 8px;
   border-top-right-radius: 25px;
-  padding: 114px 24px;
+  padding: 0 24px;
 }
 
 .about {
@@ -290,4 +289,71 @@ hr {
 button:hover {
   background-color: #396df2;
   color: white;
+}
+
+footer {
+  background-image: url(images/ContactMe.png);
+  background-size: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px;
+  margin-top: 113.8px;
+}
+
+.contact-me {
+  width: 100%;
+  color: #fff;
+  padding-top: 103px;
+  align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.contact-text {
+  margin-top: 12px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+form {
+  margin-top: 47px;
+}
+
+.input-container {
+  margin-top: 20px;
+  display: flex;
+}
+
+.input {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  width: 305px;
+}
+
+.btn-submit {
+  padding: 12px 16px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
 }
