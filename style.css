@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -124,6 +125,7 @@
   line-height: 24px;
   color: #344563;
   padding-right: 24px;
+  text-align: justify;
 }
 
 button:hover {
@@ -230,6 +232,7 @@ form {
     margin-top: 142px;
     border-radius: 24px;
     padding: 24px;
+    flex-wrap: wrap;
   }
 
   .card1 {
@@ -243,6 +246,7 @@ form {
   }
 
   .card-item {
+    width: 100%;
     flex: 1;
     margin-left: 10px;
   }
@@ -473,6 +477,8 @@ form {
   }
 
   .card {
+    display: flex;
+    flex-direction: column;
     background: #fff;
     border: 1px solid #dfe1e6;
     box-sizing: border-box;
@@ -485,10 +491,15 @@ form {
   }
 
   .profile-image {
+    order: 1;
     height: 220px;
     width: 100%;
     border-radius: 8px;
     object-fit: cover;
+  }
+
+  .card-item {
+    order: 2;
   }
 
   .btn-enabled {
@@ -617,5 +628,14 @@ form {
 
   .about {
     margin-top: 114px;
+  }
+
+  #about {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .about-content {
+    margin-top: 12px;
   }
 }
