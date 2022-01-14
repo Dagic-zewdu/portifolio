@@ -654,6 +654,10 @@ form {
   }
 }
 
+.menu-items {
+  transition: 2s;
+}
+
 .menu-items:hover {
   transform: translate(20px);
 }
