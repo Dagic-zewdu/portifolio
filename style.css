@@ -17,6 +17,20 @@
   color: blue;
 }
 
+img {
+  transition: 1s;
+  overflow: hidden;
+}
+
+img:hover {
+  transform: scale(1.04);
+}
+
+.card,
+header {
+  overflow: hidden;
+}
+
 .icons {
   list-style-type: none;
   display: flex;
@@ -638,4 +652,8 @@ form {
   .about-content {
     margin-top: 12px;
   }
+}
+
+.menu-items:hover {
+  transform: translate(20px);
 }
