@@ -6,6 +6,9 @@
 
 My goal here is to master all of the tools and best practices learned in previous microverse exercise like github flow and linters.
 
+## Online version
+
+-You can find the live demo on https://dagic-zewdu.github.io/portifolio/
 ## Built With
 
 - Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more).
@@ -24,7 +27,7 @@ The basic requirements for building the executable are:
 
 #### Cloning the project
 ```
-git clone  https://github.com/Dagic-zewdu/Portfolio-setup--and-mobile-version-skeleton
+git clone  https://github.com/Dagic-zewdu/portifolio
 ```
 
 ## Getting packages and debuging with Stylelint
