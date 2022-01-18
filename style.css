@@ -13,6 +13,11 @@
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .connect:hover {
   color: blue;
 }
@@ -23,7 +28,7 @@ img {
 }
 
 img:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 .card,
@@ -659,5 +664,5 @@ form {
 }
 
 .menu-items:hover {
-  transform: translate(20px);
+  transform: translateX(20px);
 }
