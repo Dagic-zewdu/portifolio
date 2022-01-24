@@ -15,6 +15,4 @@ function closeNav() {
 
 closeBtn.addEventListener('click', () => closeNav());
 openBtn.addEventListener('click', () => openNav());
-links.forEach((node) =>
-  node.addEventListener('click', () => closeNav()),
-);
+links.forEach((node) => node.addEventListener('click', () => closeNav()));
