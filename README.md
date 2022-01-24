@@ -49,6 +49,13 @@ npm install --save-dev hint@6.x
 ```
 npx hint .
 ```
+## ESLint
+
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+npx eslint .
+```
+
+IMPORTANT NOTE: feel free to research auto-correct options for Stylelint if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 ##### from parent source directory
 
 ### Licence
