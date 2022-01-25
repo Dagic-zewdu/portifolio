@@ -402,6 +402,7 @@ form {
     margin-top: 20px;
     margin-bottom: 20px;
     background: #dfe1e6;
+    border: 1px solid #ebecf0;
   }
 
   .mt {
@@ -477,6 +478,7 @@ form {
     margin-top: 30px;
     height: 448px;
     object-fit: cover;
+    border-radius: 8px;
   }
 
   .modal-project-description {
@@ -498,13 +500,24 @@ form {
     flex: 1;
     margin-left: 12px;
   }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    padding-bottom: 80px;
+    padding-right: 30px;
+    border-radius: 16px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   header {
     display: flex;
     padding: 20px;
-    width: 90%;
+    width: 93%;
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -671,6 +684,7 @@ form {
     margin-right: 46px;
     background: #dfe1e6;
     width: auto;
+    border: 1px solid #ebecf0;
   }
 
   footer {
@@ -756,6 +770,18 @@ form {
     margin-top: 30px;
     height: 220px;
     object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    border-radius: 16px;
   }
 }
 
@@ -781,22 +807,12 @@ form {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  padding-bottom: 80px;
-  padding-right: 30px;
-}
-
 .modal-card-title {
+  font-style: normal;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 52px;
-  color: #091e42;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
 }
 
 /* The Close Button */
@@ -814,11 +830,48 @@ form {
   cursor: pointer;
 }
 
-.icons > .btn-enabled {
+.live-links > .btn-enabled {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .btn-enabled .fa {
   margin-left: 5px;
+}
+
+.live-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  padding-left: 0;
+}
+
+.modal-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modal-content > .icons > .canopy {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.modal-content > .icons > .bg {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.modal-content > .icons > .counter {
+  width: 8px;
+  height: 8px;
+  margin: -5px -5px;
 }

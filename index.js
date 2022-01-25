@@ -1,5 +1,3 @@
-// name, description, featured image, technologies, link to live version, link to source.
-
 const projects = [{
   id: 'project-1',
   name: 'Tonic',
