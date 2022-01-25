@@ -217,6 +217,11 @@ form {
   header {
     display: flex;
     padding: 25px 154px 25px 154px;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 90%;
   }
 
   .logo {
@@ -466,13 +471,43 @@ form {
     padding-right: 300px;
     padding-left: 300px;
   }
+
+  .modal-card-img {
+    width: 100%;
+    margin-top: 30px;
+    height: 448px;
+    object-fit: cover;
+  }
+
+  .modal-project-description {
+    display: flex;
+    margin-top: 28px;
+  }
+
+  .modal-description {
+    flex: 2;
+    text-justify: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .modal-links {
+    flex: 1;
+    margin-left: 12px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   header {
     display: flex;
-    margin: 20px;
+    padding: 20px;
     width: 90%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
   }
 
   .logo {
@@ -715,6 +750,13 @@ form {
     top: 15px;
     right: 35px;
   }
+
+  .modal-card-img {
+    width: 100%;
+    margin-top: 30px;
+    height: 220px;
+    object-fit: cover;
+  }
 }
 
 .menu-items {
@@ -723,4 +765,60 @@ form {
 
 .menu-items:hover {
   transform: translateX(20px);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  padding-bottom: 80px;
+  padding-right: 30px;
+}
+
+.modal-card-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 52px;
+  color: #091e42;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icons > .btn-enabled {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-enabled .fa {
+  margin-left: 5px;
 }
