@@ -44,6 +44,10 @@ const links = document.querySelectorAll('.overlay-content > a');
 const projectButtons = [];
 const buttons = document.querySelectorAll('button');
 const modal = document.getElementById('myModal');
+const contactForm=document.getElementById('contactForm')
+const email=document.getElementById('email')
+const errorMessage=document.querySelector('.danger')
+
 
 buttons.forEach((button) => {
   const [btn] = button.id.split('-');
@@ -106,3 +110,14 @@ projectButtons.forEach((projectBtn) => {
   const { id } = projectBtn;
   projectBtn.addEventListener('click', () => displayModal(id));
 });
+
+//contact form
+contactForm.addEventListener('submit',e=>{
+  e.preventDefault()
+   let value=email.value
+if(value.match(/^[a-z0-9+_.-]+@[a-z0-9.-]+$/))
+   contactForm.submit()
+  else {
+  errorMessage.textContent='Your email need to be lowercase or numbers'
+  }
+  })
