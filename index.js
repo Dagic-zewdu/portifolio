@@ -125,35 +125,27 @@ const displayModal = (id) => {
 </div>`;
   modal.innerHTML = render;
   modal.style.display = 'block';
-  const closeModalBtn =
-    document.querySelector('span.close');
+  const closeModalBtn = document.querySelector('span.close');
   closeModalBtn.addEventListener('click', () => {
     modal.style.display = 'none';
   });
 };
 closeBtn.addEventListener('click', () => closeNav());
 openBtn.addEventListener('click', () => openNav());
-links.forEach((node) =>
-  node.addEventListener('click', () => closeNav()),
-);
+links.forEach((node) => node.addEventListener('click', () => closeNav()));
 
 projectButtons.forEach((projectBtn) => {
   const { id } = projectBtn;
-  projectBtn.addEventListener('click', () =>
-    displayModal(id),
-  );
+  projectBtn.addEventListener('click', () => displayModal(id));
 });
 
-//contact form
-
+// contact form
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  let value = email.value;
-  if (value.match(/^[a-z0-9+_.-]+@[a-z0-9.-]+$/))
-    contactForm.submit();
+  const { value } = email;
+  if (value.match(/^[a-z0-9+_.-]+@[a-z0-9.-]+$/)) contactForm.submit();
   else {
-    errorMessage.textContent =
-      'Your email need to be lowercase or numbers';
+    errorMessage.textContent = 'Your email need to be lowercase or numbers';
     email.style.border = '2px solid red';
   }
 });
