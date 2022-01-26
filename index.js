@@ -44,10 +44,6 @@ const links = document.querySelectorAll('.overlay-content > a');
 const projectButtons = [];
 const buttons = document.querySelectorAll('button');
 const modal = document.getElementById('myModal');
-const modalTile = document.querySelector('.modal-content > .modal-card-title');
-const modalImage = document.querySelector('.modal-content > .modal-card-img');
-const modalDescription = document.querySelector('.modal-project-description > .modal-description');
-const modalTech = document.querySelector('.modal-links > .icons');
 
 buttons.forEach((button) => {
   const [btn] = button.id.split('-');
@@ -62,11 +58,11 @@ function closeNav() {
 }
 const displayModal = (id) => {
   let li = '';
-const project = projects.find((p) => p.id === id);
-project.technologies.forEach((project) => {
-  li += `<li class="languages">${project}</li>`;
-});
-  let render=`
+  const project = projects.find((p) => p.id === id);
+  project.technologies.forEach((project) => {
+    li += `<li class="languages">${project}</li>`;
+  });
+  const render = `
   <div class="modal-content">
   <span class="close">&times;</span>
   <h2 class="modal-card-title">${project.name}</h2>
@@ -96,11 +92,11 @@ project.technologies.forEach((project) => {
           </div>
       </div>
   </div>
-</div>`
-  modal.innerHTML=render
+</div>`;
+  modal.innerHTML = render;
   modal.style.display = 'block';
-const closeModalBtn = document.querySelector('span.close');
-closeModalBtn.addEventListener('click', () => { modal.style.display = 'none'; });
+  const closeModalBtn = document.querySelector('span.close');
+  closeModalBtn.addEventListener('click', () => { modal.style.display = 'none'; });
 };
 closeBtn.addEventListener('click', () => closeNav());
 openBtn.addEventListener('click', () => openNav());
