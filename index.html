@@ -290,7 +290,7 @@
                 it
 
             </p>
-            <form action="https://formspree.io/f/xayvnrpv" method="POST">
+            <form id='contactForm' action="https://formspree.io/f/xayvnrpv" method="POST">
                 <div class="input-container">
                     <input type="text" placeholder="Yeremias" required="required" maxlength="30" class="input"
                         name="name" id="name">
@@ -298,6 +298,8 @@
                 <div class="input-container">
                     <input type="email" placeholder="natajayanj14@gmail.com" required="required" class="input"
                         name="email" id="email">
+                    <br />
+                    <p class="danger"></p>
                 </div>
                 <div class="input-container">
                     <textarea placeholder="Write your message here" required="required" class="input" maxlength="500"
@@ -311,7 +313,7 @@
             </form>
         </footer>
     </div>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 
 </html>

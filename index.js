@@ -1,49 +1,79 @@
-const projects = [{
-  id: 'project-1',
-  name: 'Tonic',
-  featured_image: 'images/lg-Image1.png',
-  technologies: ['HTML', 'CSS', 'javascript', 'Github', 'Ruby', 'Bootsrap'],
-  live_link: '',
-  source_link: '',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, fugiat maiores quam amet hic dolorum unde eaque explicabo sapiente asperiores voluptatibus vel. Neque deserunt sunt vel ducimus voluptatem tenetur quam incidunt esse sequi enim labore beatae iure minus dolorem nam commodi libero atque, voluptatum alias accusantium, molestiae maiores voluptatibus error. Cupiditate, enim nobis. Expedita deserunt et eaque quisquam nostrum ducimus quasi, accusantium facilis, quibusdam quia, accusamus excepturi voluptate minus consectetur dolore adipisci delectus! Facere officiis corrupti autem sequi quod atque?',
-},
-{
-  id: 'project-2',
-  name: 'Multi-Post Stories',
-  featured_image: 'images/image_4.png',
-  technologies: ['HTML', 'CSS', 'javascript'],
-  live_link: '',
-  source_link: '',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, fugiat maiores quam amet hic dolorum unde eaque explicabo sapiente asperiores voluptatibus vel. Neque deserunt sunt vel ducimus voluptatem tenetur quam incidunt esse sequi enim labore beatae iure minus dolorem nam commodi libero atque, voluptatum alias accusantium, molestiae maiores voluptatibus error. Cupiditate, enim nobis. Expedita deserunt et eaque quisquam nostrum ducimus quasi, accusantium facilis, quibusdam quia, accusamus excepturi voluptate minus consectetur dolore adipisci delectus! Facere officiis corrupti autem sequi quod atque?',
-},
-{
-  id: 'project-3',
-  name: 'Facebook 360',
-  featured_image: 'images/Images_1.png',
-  technologies: ['HTML', 'CSS', 'javascript', 'Github', 'Ruby', 'Bootsrap', 'Node.js'],
-  live_link: '',
-  source_link: '',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, fugiat maiores quam amet hic dolorum unde eaque explicabo sapiente asperiores voluptatibus vel. Neque deserunt sunt vel ducimus voluptatem tenetur quam incidunt esse sequi enim labore beatae iure minus dolorem nam commodi libero atque, voluptatum alias accusantium, molestiae maiores voluptatibus error. Cupiditate, enim nobis. Expedita deserunt et eaque quisquam nostrum ducimus quasi, accusantium facilis, quibusdam quia, accusamus excepturi voluptate minus consectetur dolore adipisci delectus! Facere officiis corrupti autem sequi quod atque?',
-
-},
-{
-  id: 'project-4',
-  name: 'Uber Navigation',
-  featured_image: 'images/availability.png',
-  technologies: ['HTML', 'CSS', 'javascript', 'Github', 'Bootsrap'],
-  live_link: '',
-  source_link: '',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, fugiat maiores quam amet hic dolorum unde eaque explicabo sapiente asperiores voluptatibus vel. Neque deserunt sunt vel ducimus voluptatem tenetur quam incidunt esse sequi enim labore beatae iure minus dolorem nam commodi libero atque, voluptatum alias accusantium, molestiae maiores voluptatibus error. Cupiditate, enim nobis. Expedita deserunt et eaque quisquam nostrum ducimus quasi, accusantium facilis, quibusdam quia, accusamus excepturi voluptate minus consectetur dolore adipisci delectus! Facere officiis corrupti autem sequi quod atque?',
-},
+const projects = [
+  {
+    id: 'project-1',
+    name: 'Tonic',
+    featured_image: 'images/lg-Image1.png',
+    technologies: [
+      'HTML',
+      'CSS',
+      'javascript',
+      'Github',
+      'Ruby',
+      'Bootsrap',
+    ],
+    live_link: '',
+    source_link: '',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, fugiat maiores quam amet hic dolorum unde eaque explicabo sapiente asperiores voluptatibus vel. Neque deserunt sunt vel ducimus voluptatem tenetur quam incidunt esse sequi enim labore beatae iure minus dolorem nam commodi libero atque, voluptatum alias accusantium, molestiae maiores voluptatibus error. Cupiditate, enim nobis. Expedita deserunt et eaque quisquam nostrum ducimus quasi, accusantium facilis, quibusdam quia, accusamus excepturi voluptate minus consectetur dolore adipisci delectus! Facere officiis corrupti autem sequi quod atque?',
+  },
+  {
+    id: 'project-2',
+    name: 'Multi-Post Stories',
+    featured_image: 'images/image_4.png',
+    technologies: ['HTML', 'CSS', 'javascript'],
+    live_link: '',
+    source_link: '',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, fugiat maiores quam amet hic dolorum unde eaque explicabo sapiente asperiores voluptatibus vel. Neque deserunt sunt vel ducimus voluptatem tenetur quam incidunt esse sequi enim labore beatae iure minus dolorem nam commodi libero atque, voluptatum alias accusantium, molestiae maiores voluptatibus error. Cupiditate, enim nobis. Expedita deserunt et eaque quisquam nostrum ducimus quasi, accusantium facilis, quibusdam quia, accusamus excepturi voluptate minus consectetur dolore adipisci delectus! Facere officiis corrupti autem sequi quod atque?',
+  },
+  {
+    id: 'project-3',
+    name: 'Facebook 360',
+    featured_image: 'images/Images_1.png',
+    technologies: [
+      'HTML',
+      'CSS',
+      'javascript',
+      'Github',
+      'Ruby',
+      'Bootsrap',
+      'Node.js',
+    ],
+    live_link: '',
+    source_link: '',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, fugiat maiores quam amet hic dolorum unde eaque explicabo sapiente asperiores voluptatibus vel. Neque deserunt sunt vel ducimus voluptatem tenetur quam incidunt esse sequi enim labore beatae iure minus dolorem nam commodi libero atque, voluptatum alias accusantium, molestiae maiores voluptatibus error. Cupiditate, enim nobis. Expedita deserunt et eaque quisquam nostrum ducimus quasi, accusantium facilis, quibusdam quia, accusamus excepturi voluptate minus consectetur dolore adipisci delectus! Facere officiis corrupti autem sequi quod atque?',
+  },
+  {
+    id: 'project-4',
+    name: 'Uber Navigation',
+    featured_image: 'images/availability.png',
+    technologies: [
+      'HTML',
+      'CSS',
+      'javascript',
+      'Github',
+      'Bootsrap',
+    ],
+    live_link: '',
+    source_link: '',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, fugiat maiores quam amet hic dolorum unde eaque explicabo sapiente asperiores voluptatibus vel. Neque deserunt sunt vel ducimus voluptatem tenetur quam incidunt esse sequi enim labore beatae iure minus dolorem nam commodi libero atque, voluptatum alias accusantium, molestiae maiores voluptatibus error. Cupiditate, enim nobis. Expedita deserunt et eaque quisquam nostrum ducimus quasi, accusantium facilis, quibusdam quia, accusamus excepturi voluptate minus consectetur dolore adipisci delectus! Facere officiis corrupti autem sequi quod atque?',
+  },
 ];
 
 const closeBtn = document.getElementById('closeBtn');
 const openBtn = document.getElementById('onion');
 const nav = document.getElementById('nav');
-const links = document.querySelectorAll('.overlay-content > a');
+const links = document.querySelectorAll(
+  '.overlay-content > a',
+);
 const projectButtons = [];
 const buttons = document.querySelectorAll('button');
 const modal = document.getElementById('myModal');
+const contactForm = document.getElementById('contactForm');
+const email = document.getElementById('email');
+const errorMessage = document.querySelector('.danger');
 
 buttons.forEach((button) => {
   const [btn] = button.id.split('-');
@@ -96,7 +126,9 @@ const displayModal = (id) => {
   modal.innerHTML = render;
   modal.style.display = 'block';
   const closeModalBtn = document.querySelector('span.close');
-  closeModalBtn.addEventListener('click', () => { modal.style.display = 'none'; });
+  closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
 };
 closeBtn.addEventListener('click', () => closeNav());
 openBtn.addEventListener('click', () => openNav());
@@ -106,3 +138,21 @@ projectButtons.forEach((projectBtn) => {
   const { id } = projectBtn;
   projectBtn.addEventListener('click', () => displayModal(id));
 });
+
+// contact form
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const { value } = email;
+  if (value.match(/^[a-z0-9+_.-]+@[a-z0-9.-]+$/)) contactForm.submit();
+  else {
+    errorMessage.textContent = 'Your email need to be lowercase or numbers';
+    email.style.border = '2px solid red';
+  }
+});
+
+function hideErrorMessage() {
+  errorMessage.textContent = '';
+  email.style.border = 'none';
+}
+
+email.addEventListener('focus', hideErrorMessage);
