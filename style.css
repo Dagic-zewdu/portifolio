@@ -217,6 +217,11 @@ form {
   header {
     display: flex;
     padding: 25px 154px 25px 154px;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 90%;
   }
 
   .logo {
@@ -397,6 +402,7 @@ form {
     margin-top: 20px;
     margin-bottom: 20px;
     background: #dfe1e6;
+    border: 1px solid #ebecf0;
   }
 
   .mt {
@@ -466,13 +472,55 @@ form {
     padding-right: 300px;
     padding-left: 300px;
   }
+
+  .modal-card-img {
+    width: 100%;
+    margin-top: 30px;
+    height: 448px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .modal-project-description {
+    display: flex;
+    margin-top: 28px;
+  }
+
+  .modal-description {
+    flex: 2;
+    text-justify: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .modal-links {
+    flex: 1;
+    margin-left: 12px;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    padding-bottom: 80px;
+    padding-right: 30px;
+    border-radius: 16px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   header {
     display: flex;
-    margin: 20px;
-    width: 90%;
+    padding: 20px;
+    width: 93%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
   }
 
   .logo {
@@ -633,9 +681,9 @@ form {
   hr {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 46px;
     background: #dfe1e6;
-    width: auto;
+    width: 95%;
+    border: 1px solid #ebecf0;
   }
 
   footer {
@@ -715,6 +763,25 @@ form {
     top: 15px;
     right: 35px;
   }
+
+  .modal-card-img {
+    width: 100%;
+    margin-top: 30px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    border-radius: 16px;
+  }
 }
 
 .menu-items {
@@ -723,4 +790,88 @@ form {
 
 .menu-items:hover {
   transform: translateX(20px);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.live-links > .btn-enabled {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-enabled .fa {
+  margin-left: 5px;
+}
+
+.live-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  padding-left: 0;
+}
+
+.modal-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 12px;
+}
+
+.modal-content > .icons > .canopy {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.modal-content > .icons > .bg {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.modal-content > .icons > .counter {
+  width: 8px;
+  height: 8px;
+  margin: -5px -5px;
 }
