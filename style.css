@@ -681,9 +681,8 @@ form {
   hr {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 46px;
     background: #dfe1e6;
-    width: auto;
+    width: 95%;
     border: 1px solid #ebecf0;
   }
 
@@ -852,6 +851,7 @@ form {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
+  margin-top: 12px;
 }
 
 .modal-content > .icons > .canopy {

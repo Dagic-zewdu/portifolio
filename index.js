@@ -44,7 +44,6 @@ const links = document.querySelectorAll('.overlay-content > a');
 const projectButtons = [];
 const buttons = document.querySelectorAll('button');
 const modal = document.getElementById('myModal');
-const closeModalBtn = document.querySelector('span.close');
 const modalTile = document.querySelector('.modal-content > .modal-card-title');
 const modalImage = document.querySelector('.modal-content > .modal-card-img');
 const modalDescription = document.querySelector('.modal-project-description > .modal-description');
@@ -63,15 +62,45 @@ function closeNav() {
 }
 const displayModal = (id) => {
   let li = '';
-  const project = projects.find((p) => p.id === id);
+const project = projects.find((p) => p.id === id);
+project.technologies.forEach((project) => {
+  li += `<li class="languages">${project}</li>`;
+});
+  let render=`
+  <div class="modal-content">
+  <span class="close">&times;</span>
+  <h2 class="modal-card-title">${project.name}</h2>
+  <ul class="icons">
+      <li class="canopy">CANOPY</li>
+      <li class="counter"><img src="images/Counter.svg" alt="">
+      </li>
+      <li class="bg">Back End Dev</li>
+      <li class="counter"><img src="images/Counter.svg" alt="">
+      </li>
+      <li class="bg">2015</li>
+  </ul>
+  <img src=${project.featured_image} alt="featured project image" class="modal-card-img">
+  <div class="modal-project-description">
+      <p class="modal-description">${project.description}</p>
+      <div class="modal-links">
+          <ul class="icons">${li}</ul>
+          <hr>
+          <div class="live-links">
+              <button class="btn-enabled" id='live-link' type="button">
+                  see live<i class="fa fa-external-link"></i>
+              </button>
+              <button class="btn-enabled" id='btn-source-link' type="button">
+                  See source
+                  <i class="fa fa-github"></i>
+              </button>
+          </div>
+      </div>
+  </div>
+</div>`
+  modal.innerHTML=render
   modal.style.display = 'block';
-  modalTile.textContent = project.name;
-  modalImage.src = project.featured_image;
-  modalDescription.textContent = project.description;
-  project.technologies.forEach((project) => {
-    li += `<li class="languages">${project}</li>`;
-  });
-  modalTech.innerHTML = li;
+const closeModalBtn = document.querySelector('span.close');
+closeModalBtn.addEventListener('click', () => { modal.style.display = 'none'; });
 };
 closeBtn.addEventListener('click', () => closeNav());
 openBtn.addEventListener('click', () => openNav());
@@ -81,5 +110,3 @@ projectButtons.forEach((projectBtn) => {
   const { id } = projectBtn;
   projectBtn.addEventListener('click', () => displayModal(id));
 });
-
-closeModalBtn.addEventListener('click', () => { modal.style.display = 'none'; });
