@@ -154,5 +154,29 @@ function hideErrorMessage() {
   errorMessage.textContent = '';
   email.style.border = 'none';
 }
+const inputs = contactForm.querySelectorAll('input');
+const textArea = contactForm.querySelector('textarea');
+const getData = () => {
+  const inputs = localStorage.getItem('inputs');
+  return JSON.parse(inputs);
+};
+const saveData = (key, value) => {
+  const data = getData();
+  const d = { ...data, [key]: value };
+  localStorage.setItem('inputs', JSON.stringify(d));
+};
 
+inputs.forEach((input) => {
+  input.addEventListener('keyup', (e) => saveData(e.target.id, e.target.value));
+});
 email.addEventListener('focus', hideErrorMessage);
+
+const reload = () => {
+  const data = getData();// {name:'Dagic',email:'dagi.zewdu.dz'}
+  for (const i in data) {
+    inputs.forEach((input) => {
+      if (i === input.id) input.value = data[i];
+    });
+  }
+};
+reload();
