@@ -125,34 +125,26 @@ const displayModal = (id) => {
 </div>`;
   modal.innerHTML = render;
   modal.style.display = 'block';
-  const closeModalBtn =
-    document.querySelector('span.close');
+  const closeModalBtn = document.querySelector('span.close');
   closeModalBtn.addEventListener('click', () => {
     modal.style.display = 'none';
   });
 };
 closeBtn.addEventListener('click', () => closeNav());
 openBtn.addEventListener('click', () => openNav());
-links.forEach((node) =>
-  node.addEventListener('click', () => closeNav()),
-);
+links.forEach((node) => node.addEventListener('click', () => closeNav()));
 
 projectButtons.forEach((projectBtn) => {
   const { id } = projectBtn;
-  projectBtn.addEventListener('click', () =>
-    displayModal(id),
-  );
+  projectBtn.addEventListener('click', () => displayModal(id));
 });
 
 // contact form
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const { value } = email;
-  if (value.match(/^[a-z0-9+_.-]+@[a-z0-9.-]+$/))
-    contactForm.submit();
-  else {
-    errorMessage.textContent =
-      'Your email need to be lowercase or numbers';
+  if (value.match(/^[a-z0-9+_.-]+@[a-z0-9.-]+$/)) { contactForm.submit(); } else {
+    errorMessage.textContent = 'Your email need to be lowercase or numbers';
     email.style.border = '2px solid red';
   }
 });
@@ -174,14 +166,10 @@ const saveData = (key, value) => {
 };
 
 inputs.forEach((input) => {
-  input.addEventListener('keyup', (e) =>
-    saveData(e.target.id, e.target.value),
-  );
+  input.addEventListener('keyup', (e) => saveData(e.target.id, e.target.value));
 });
 
-textArea.addEventListener('keyup', (e) =>
-  saveData(e.target.id, e.target.value),
-);
+textArea.addEventListener('keyup', (e) => saveData(e.target.id, e.target.value));
 
 email.addEventListener('focus', hideErrorMessage);
 
