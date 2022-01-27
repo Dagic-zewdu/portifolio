@@ -143,8 +143,7 @@ projectButtons.forEach((projectBtn) => {
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const { value } = email;
-  if (value.match(/^[a-z0-9+_.-]+@[a-z0-9.-]+$/)) contactForm.submit();
-  else {
+  if (value.match(/^[a-z0-9+_.-]+@[a-z0-9.-]+$/)) { contactForm.submit(); } else {
     errorMessage.textContent = 'Your email need to be lowercase or numbers';
     email.style.border = '2px solid red';
   }
@@ -154,5 +153,31 @@ function hideErrorMessage() {
   errorMessage.textContent = '';
   email.style.border = 'none';
 }
+const inputs = contactForm.querySelectorAll('input');
+const textArea = contactForm.querySelector('textarea');
+const getData = () => {
+  const inputs = localStorage.getItem('inputs');
+  return JSON.parse(inputs);
+};
+const saveData = (key, value) => {
+  const data = getData();
+  const d = { ...data, [key]: value };
+  localStorage.setItem('inputs', JSON.stringify(d));
+};
+
+inputs.forEach((input) => {
+  input.addEventListener('keyup', (e) => saveData(e.target.id, e.target.value));
+});
+
+textArea.addEventListener('keyup', (e) => saveData(e.target.id, e.target.value));
 
 email.addEventListener('focus', hideErrorMessage);
+
+const reload = () => {
+  const data = getData();
+  inputs.forEach((input) => {
+    input.value = data[input.id];
+  });
+  textArea.value = data[textArea.id];
+};
+reload();

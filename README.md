@@ -2,13 +2,15 @@
 
 > This is a Portfolio: setup and mobile version skeleton excercise.
 
-![screenshot](images/sample.png)
+![screenshot](images/desktop.png)
+![screenshot](images/mobile.png)
 
 My goal here is to master all of the tools and best practices learned in previous microverse exercise like github flow and linters.
 
-## Online version
+## Live Demo
 
--You can find the live demo on https://dagic-zewdu.github.io/portifolio/
+[Live Demo Link](https://dagic-zewdu.github.io/portifolio/)
+
 ## Built With
 
 - Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more).
@@ -53,6 +55,35 @@ npx hint .
 
 npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
 npx eslint .
+
+
+## Author
+
+👤 **Dagic Zewdu Tilahun**
+
+- GitHub: [@Dagic-zewdu](https://github.com/Dagic-zewdu)
+- Twitter: [@dagic4](https://twitter.com/dagic4)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/dagi-zewdu-21b835215/)
+
+## 🤝 Contributing
+
+👤 **Soufiane Boursen**
+
+- GitHub: [@Sboursen](https://github.com/Sboursen)
+- Twitter: [@sboursen_dev](https://twitter.com/sboursen_dev)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/sboursen)
+
+👤 **Vignesh**
+
+- GitHub: [@vikipretium](https://github.com/vikipretium)
+- Twitter: [@vikipretium](https://twitter.com/vikipretium)
+- LinkedIn: [vikipretium](https://linkedin.com/in/vikipretium)
+
+
+## 📝 License
+
+This project is [MIT](LICENSE) licensed.
+
 ```
 
 IMPORTANT NOTE: feel free to research auto-correct options for Stylelint if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
@@ -66,5 +97,3 @@ This software is provided 'Dagic', without any express or implied warranty. In n
 Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
 
 
-## Author
- **Dagmawi zewdu Tilahun** - [Dagic-zewdu](https://github.com/Dagic-zewdu)
